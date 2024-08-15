@@ -1,0 +1,114 @@
+.home {
+    display: flex;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+}
+
+.full-height {
+    min-height: 100vh;
+    display: flex;
+}
+
+.desktop-aside {
+    background-color: #545c64;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.logo-container {
+    padding: 20px;
+    background-color: #4a4f57;
+}
+
+.logo-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.el-menu-vertical-demo {
+    flex-grow: 1;
+    border-right: none;
+}
+
+.main-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-card {
+    height: 30vh;
+    background-image: url('http://www.animeguide.top:8091/themes/theme-heolink/assets/images/index_cover2.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.mobile-header {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #545c64;
+}
+
+.mobile-logo {
+    height: 40px;
+}
+
+.mobile-menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .desktop-aside {
+        display: none;
+    }
+
+    .mobile-header {
+        display: flex;
+    }
+
+    .el-main {
+        padding: 10px;
+    }
+
+    .hero-card {
+        height: 25vh;
+    }
+
+    .hero-title {
+        font-size: 1.5em;
+    }
+
+    .hero-subtitle {
+        font-size: 1em;
+    }
+
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 220px;
+    right: 50px;
+    z-index: 1000;
+}
